@@ -849,7 +849,7 @@ section {
     }
 
     .hero-content {
-        padding: 7rem 1.5rem 1.5rem 1.5rem;
+        padding: 2rem 1.5rem 1.5rem 1.5rem;
     }
 
     .hero-title {
@@ -865,9 +865,119 @@ section {
         height: 300px;
     }
 
-    .servizi-grid,
+    .servizi-grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 1.5rem;
+        padding: 1rem 0;
+        margin: 2rem -1rem 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .servizi-grid::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .servizi-grid::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+    }
+
+    .servizi-grid::-webkit-scrollbar-thumb {
+        background: var(--gold);
+        border-radius: 3px;
+    }
+
+    .servizio-card {
+        flex: 0 0 85%;
+        max-width: 85%;
+        scroll-snap-align: start;
+        margin: 0;
+    }
+
     .prodotti-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 1.5rem;
+        padding: 1rem 0;
+        margin: 2rem -1rem 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .prodotti-grid::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .prodotti-grid::-webkit-scrollbar-track {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 3px;
+    }
+
+    .prodotti-grid::-webkit-scrollbar-thumb {
+        background: var(--gold);
+        border-radius: 3px;
+    }
+
+    .prodotto-card {
+        flex: 0 0 85%;
+        max-width: 85%;
+        scroll-snap-align: start;
+        margin: 0;
+    }
+
+    .contatti-content {
+        display: flex;
+        flex-direction: column;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .contatti-info {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        gap: 1.5rem;
+        padding: 1rem 0;
+        margin: 0 -1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .contatti-info::-webkit-scrollbar {
+        height: 6px;
+    }
+
+    .contatti-info::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 3px;
+    }
+
+    .contatti-info::-webkit-scrollbar-thumb {
+        background: var(--gold);
+        border-radius: 3px;
+    }
+
+    .info-card {
+        flex: 0 0 85%;
+        max-width: 85%;
+        scroll-snap-align: start;
+        margin: 0;
+    }
+
+    .contatti-map {
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+        margin-top: 1rem;
     }
 
     .footer-content {
@@ -910,7 +1020,7 @@ section {
     }
 
     .hero-content {
-        padding: 7rem 1rem 1rem 1rem;
+        padding: 1.5rem 1rem 1rem 1rem;
     }
 
     .hero-title {
@@ -921,6 +1031,21 @@ section {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    .servizio-card {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+
+    .prodotto-card {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+
+    .info-card {
+        flex: 0 0 90%;
+        max-width: 90%;
     }
 }
 
